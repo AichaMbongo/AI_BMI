@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--html>
+  <head>
+    <title>base</title>
+  </head>
+  <body>
+    <h2>weight data Forms</h2>
+
+    <form action="prediction" method="POST" enctype="multipart/form-data">
+      <input type="text" name="weight" placeholder="enteer your weight"  /><br/>
+      <input type="text" name="height" placeholder="enteer your height"  /><br/>
+      <input type="submit" name="btn" />
+    </form>
+
+    
+  </body>
+</html-->
+
+
+
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+          crossorigin="anonymous">
+          <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <title>BMI checker</title>
+</head>
+<body>
+
+
+<h2 class="glow">StretchIt, where your health matters the most <i class="fa fa-heart"></i></h2>
+
+    <div class="form-container sign-in-container">
+        <form action="prediction" method="POST" enctype="multipart/form-data">
+            <h1>Key in your details</h1>
+            <!-- <input type="text" placeholder="Gender (Male/ Female)" /> -->
+            <input type="number" placeholder="Height in cm" name="height" />
+            <input type="number" placeholder="weight in kgs" name="weight" />
+            <button type="submit" class="ghost"  name="btn" >Submit</button>
+        </form>
+    </div>
+
+</div>
+
+<footer>
+    <p>
+        For more health <i class="fa fa-heart"></i> advice
+        <a target="_blank" href="https://www.healthline.com/nutrition/27-health-and-nutrition-tips#TOC_TITLE_HDR_2">visit</a>
+        Our health website to learn more
+
+    </p>
+</footer>
+
+
+<script src="js/jScript.js"></script>
+</body>
+</html>

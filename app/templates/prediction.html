@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title> prediction</title>
+    </head>
+    <body>    
+      
+            <div class="container" id="container">
+                <div class="form-container sign-up-container">
+                    
+            
+                        <h1>BMI analysis</h1>
+                        <!--div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div-->
+            
+                        <!--input type="text" placeholder="BMI" />
+                        <input type="text" placeholder="description" /-->
+                        <h1>results</h1>
+                        {% if data==1 %}
+                        <h2>prediction is :1</h2>
+                        {% elif data==2 %}
+                        <h2>prediction is :2</h2>
+                        {% elif data==3 %}
+                        <h2>prediction is :3</h2>
+                        {% elif data==4 %}
+                        <h2>prediction is :4</h2>
+                        {% elif data==5 %}
+                        <h2>prediction is :5</h2>
+                        {% elif data==6 %}
+                        <h2>prediction is :6</h2>
+                        {% else %}
+                        <h2>error</h2>
+                        {% endif %}  
+                        <!--button>Sign Up</button-->
+                    
+                </div>   
+
+            <div class="overlay-container">
+                <div class="overlay">
+        
+                    <div class="overlay-panel overlay-left">
+                        <div class="overlay2">
+                        <h1 class="glow">Here are your results! </h1>
+                        <!--p>To keep connected with us please login with your personal info</p-->
+                        <button class="ghost" id="signIn">Back</button>
+                    </div>
+                    </div>
+                    <div class="overlay-panel overlay-right" style="font-size: larger">
+                        <div class="overlay2">
+                        <h2 class="glow">BMI CALCULATOR</h2>
+                        <h4>Your health matters</h4>
+                        <!--button class="ghost" id="signUp">Sign Up</button-->
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+    </body>
+</html>
