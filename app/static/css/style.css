@@ -200,6 +200,13 @@ input {
 
 }
 
+.overlay3 {
+    margin-top: 30%;
+    /*background: linear-gradient(to bottom, #660033 0%, #ff6666 100%);*/
+     background: rgba(255, 75, 43, 0.21);
+
+}
+
 .overlay {
     /*background: #FF416C;*/
     background-image: url("https://valterlongo.com/wp-content/uploads/2019/10/obesity-in-italy.jpg");
@@ -294,3 +301,52 @@ footer a {
     color: #3c97bf;
     text-decoration: none;
 }
+
+@-webkit-keyframes slide {
+    0%   { transform: translate(0px,100px); }
+    100% { transform: translate(0px,0px); }
+  }
+  @-moz-keyframes slide {
+    0%   { transform: translate(0px,100px); }
+    100% { transform: translate(0px,0px); }
+  }
+  @-o-keyframes slide {
+    0%   { transform: translate(0px,100px); }
+    100% { transform: translate(0px,0px); }
+  }
+  @keyframes slide {
+    0%   { transform: translate(0px,100px); }
+    100% { transform: translate(0px,0px); }
+  }
+  
+  .page1 {
+   animation-name: slide;
+   animation-duration: 2s; 
+   animation-fill-mode: forwards; 
+  }
+
+  @-webkit-keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .page {
+   animation-name: fade;
+   animation-duration: 3s; 
+   animation-fill-mode: forwards; 
+  }
+  
+  
+  

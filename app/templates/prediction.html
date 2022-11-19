@@ -1,61 +1,105 @@
 <html>
     <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
         <title> prediction</title>
     </head>
-    <body>    
-      
-            <div class="container" id="container">
-                <div class="form-container sign-up-container">
+    <body class="page">    
+        <a href="home">
+            <h2 class="glow">StretchIt, where your health matters the most <i class="fa fa-heart"></i></h2>
+          </a>   
+        <div class="container page1" id="container">
+            <div class="form-container sign-up-container">
+                
+        
                     
-            
-                        <h1>BMI analysis</h1>
-                        <!--div class="social-container">
-                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                        </div-->
-            
-                        <!--input type="text" placeholder="BMI" />
-                        <input type="text" placeholder="description" /-->
-                        <h1>results</h1>
-                        {% if data==1 %}
-                        <h2>prediction is :1</h2>
-                        {% elif data==2 %}
-                        <h2>prediction is :2</h2>
-                        {% elif data==3 %}
-                        <h2>prediction is :3</h2>
-                        {% elif data==4 %}
-                        <h2>prediction is :4</h2>
-                        {% elif data==5 %}
-                        <h2>prediction is :5</h2>
-                        {% elif data==6 %}
-                        <h2>prediction is :6</h2>
-                        {% else %}
-                        <h2>error</h2>
-                        {% endif %}  
-                        <!--button>Sign Up</button-->
-                    
-                </div>   
+                
+            </div>   
 
-            <div class="overlay-container">
-                <div class="overlay">
+        <div class="overlay-container">
+            <div class="overlay">
         
-                    <div class="overlay-panel overlay-left">
-                        <div class="overlay2">
-                        <h1 class="glow">Here are your results! </h1>
-                        <!--p>To keep connected with us please login with your personal info</p-->
-                        <button class="ghost" id="signIn">Back</button>
-                    </div>
-                    </div>
-                    <div class="overlay-panel overlay-right" style="font-size: larger">
-                        <div class="overlay2">
-                        <h2 class="glow">BMI CALCULATOR</h2>
-                        <h4>Your health matters</h4>
-                        <!--button class="ghost" id="signUp">Sign Up</button-->
-                        </div>
-                    </div>
-        
+                <div class="overlay-panel overlay-right">
+                    <div class="overlay2">
+                    <h1 class="glow">Here are your results! </h1>
+                    <!--p>To keep connected with us please login with your personal info</p-->
+                    
+                    
                 </div>
+                </div>
+              
+        
             </div>
+        </div>
+        <div class="container " id="container"></div>
+        <div class="form-container sign-in-container">
+          
+            <div class="overlay3 " style="color:black ;">
+                <h1 style="text-align: center; color: black;">BMI analysis</h1>
+            
+            <!--div class="social-container">
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div-->
+        
+            <!--input type="text" placeholder="BMI" />
+            <input type="text" placeholder="description" /-->
+           
+            {% if data==1 %}
+            <h2>Your BMI is : less than 18.5 </h2>
+            <h2>You are Underweight </h2>
+            {% elif data==2 %}
+            <h2>Your BMI ranges betwen 18.5 - 24.9 </h2>
+            <h2>You are Normal weight </h2>
+            {% elif data==3 %}
+            <h2>Your BMI ranges betwen 25 - 29.9 </h2>
+            <h2>You are Overweight </h2>
+
+            {% elif data==4 %}
+            <h2>Your BMI ranges betwen 30 - 34.9 </h2>
+            <h2>You are Obese </h2>
+            
+            {% elif data==5 %}
+            <h2>Your BMI is above 35 </h2>
+            <h2>You are Extremely Obese </h2>
+           
+            {% else %}
+            <h2>error</h2>
+            {% endif %}  
+
+            
+
+               
+            
+
+
+
+        
+<div >
+    <i class="fa fa-heart"></i> 
+    <a target="_self" href="https://www.healthline.com/nutrition"><p style="text-align:center ; color:blue; font-size:medium;">Click here to begin your health journey</p></a>
+
+</div>
+<a href="index">
+    <button class="ghost" id="signIn" >Back</button>
+</a>
+            <!--button>Sign Up</button-->
+            </div>
+        
+        </div>
+        
+        </div>
+        <footer>
+            <p>
+                For more health <i class="fa fa-heart"></i> advice
+                <a target="_blank" href="https://www.healthline.com/nutrition/27-health-and-nutrition-tips#TOC_TITLE_HDR_2">visit</a>
+                Our health website to learn more
+        
+            </p>
+        </footer>
+<script src="{{url_for('static', filename='js/jScript.js')}}"></script>
+
     </body>
 </html>
+

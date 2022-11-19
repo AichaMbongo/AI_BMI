@@ -1,0 +1,223 @@
+
+@import url('https://fonts.googleapis.com/css?family=Inter:600,600,600,600,600,600,600,600,600,500,400,400,500,400,400,300|EB+Garamond:700italic,800italic');
+
+body{
+    /*background:#9CCC65;*/
+    background :url("https://www.diabetes.co.uk/wp-content/uploads/2022/09/bmi-section.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin:0;
+    padding:0;
+    font-family:'EB Garamond', serif;
+    font-size:20px;
+    line-height:1.5em;
+  }
+  .container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+    
+  }
+
+  .container1{
+    width:80%;
+    margin:auto;
+    margin-top: 80px;
+    overflow:hidden;
+    background: rgba(140, 140, 140, 0.20);
+  }
+  header{
+    /*background: linear-gradient(to bottom, #000000 0%, #ffffff 112%);*/
+   /* background: linear-gradient(to top, #000000 0%, #ffffcc 100%);*/
+   background: rgba(0, 0, 0, 0.70);
+    min-height:50px;
+    border-bottom:2px solid black;
+    padding-top:0px;
+    font-family:'EB Garamond', serif;
+  }
+  header a{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+    font-style:italic;
+  }
+  header ul{
+    padding:0;
+    margin:0;
+  }
+  header li{
+    display:inline;
+    float:right;
+    padding:30px 5px 5px 5px; 
+    margin:5px;
+  }
+  #logo{
+    display:inline;
+    position:absolute;
+    left:0px;
+    padding:5px;
+    color:#C62828;
+    /*border:2px solid black;*/
+    margin-left:5px;
+   
+   margin-top:25px ;
+  }
+  header nav{
+    float:right;
+    margin-top:10px
+  }
+  #showcase{
+    min-height:550px;
+    background:transparent;
+    text-align:center;
+    /*background:url("https://www.diabetes.co.uk/wp-content/uploads/2022/09/bmi-section.jpg");*/
+    background-size:cover;
+  }
+  h2{
+    font-weight:bold;
+    font-size:40px;
+    margin-top:20%;
+    color:white;
+    text-shadow:15px 10px 5px #212121; 
+  }
+  section{
+   background: rgba(0, 0, 0, 0.20);
+    /*background:#004D40;*/
+  
+    color:white;
+    padding:10px;
+  }
+  section h1{
+    text-align:center;
+  }
+  form{
+    text-align:center;
+    padding:5px;  
+  }
+  section input[type="email"]{
+    font-size:20px;
+    /*font-family:Crimson,san-serif;*/
+    font-family:'EB Garamond', serif;
+   padding:4px;
+    width:350px;
+    height:30px;
+    border:2px solid black;
+  }
+
+  .glow {
+    /*font-size: 70px;*/
+    color: #ffffff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000,
+        0 0 50px #9554b3, 0 0 60px #9554b3;
+    }
+    to {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #4d2f3e, 0 0 40px #694f5c, 0 0 50px #4f444a,
+        0 0 60px #211119, 0 0 70px #531a37;
+    }
+}
+
+
+  button{
+
+  
+        /*background-color: transparent;*/
+        background: linear-gradient(to bottom, #000000 0%, #ffffcc 100%);
+        border-color: transparent;
+
+    width:180px;
+    height:80px;
+    font-weight:bold;
+    font-size: larger;
+    font-family:'EB Garamond', serif ;
+    border-radius: 50%;
+    
+    border:0;
+  }
+  footer{
+    text-align: center;
+    background:#0a0a0a;
+    color:white;
+    padding:10px;
+  }
+  .left{
+    float:left;
+    font-size:30px;
+    color:black;
+  }
+  footer ul{
+    text-align:center;
+  }
+  footer li{
+    list-style:none;
+    display:inline;
+    font-size:50px;
+    padding:5px;
+    margin:5px;
+  }
+  footer a{
+    color:white;
+    margin:15px;
+  }
+  footer a:hover {
+    color:#FFAB91;
+    font-size:60px;
+  }
+  span{
+    color:#F50057;
+  }
+
+  @-webkit-keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .page {
+   animation-name: fade;
+   animation-duration: 3s; 
+   animation-fill-mode: forwards; 
+  }
+
+
+  @-webkit-keyframes slide {
+    0%   { transform: translate(0px,100px); }
+    100% { transform: translate(0px,0px); }
+  }
+  @-moz-keyframes slide {
+    0%   { transform: translate(0px,100px); }
+    100% { transform: translate(0px,0px); }
+  }
+  @-o-keyframes slide {
+    0%   { transform: translate(0px,100px); }
+    100% { transform: translate(0px,0px); }
+  }
+  @keyframes slide {
+    0%   { transform: translate(0px,100px); }
+    100% { transform: translate(0px,0px); }
+  }
+  
+  .page1 {
+   animation-name: slide;
+   animation-duration: 2s; 
+   animation-fill-mode: forwards;}

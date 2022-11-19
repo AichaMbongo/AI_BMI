@@ -3,11 +3,18 @@ from app import app
 import pickle
 import numpy as np
 
-model=pickle.load(open('model.pkl','rb')) 
+model=pickle.load(open('model.pkl','rb'))
+
+@app.route('/')
+@app.route('/home')
+def home():
+    return render_template('home.html', title='Home',data='hey')
+
 @app.route('/')
 @app.route('/index')
 def index():
     return render_template('index.html', title='Home',data='hey')
+
 
 @app.route("/prediction",methods=["POST"])
 def prediction():
